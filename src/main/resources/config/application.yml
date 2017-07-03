@@ -1,0 +1,59 @@
+dirs:
+  '5':
+      - ^java/trunk/.*$
+      - ^java/branches/branch1/.*$
+
+core: javasource
+
+branches :
+  jboss5 :
+    - ^java/trunk/.*$
+  long_lived_feature1 :
+    - ^java/branches/long_lived_feature1/.*$
+
+extensions:
+  - ^.*\.arg$
+  - ^.*\.bashrc$
+  - ^.*\.bat$
+  - ^.*\.cmd$
+  - ^.*\.sh$
+  - ^.*\.classpath$
+  - ^.*\.component$
+  - ^.*\.css$
+  - ^.*\.ftl$
+  - ^.*\.java$
+  - ^.*\.js$
+  - ^.*\.jspf?$
+  - ^.*\.json$
+  - ^.*\.less$
+  - ^.*\.MF$
+  - ^.*\.prefs$
+  - ^.*\.project$
+  - ^.*\.properties$
+  - ^.*\.props$
+  - ^.*\.txt$
+  - ^.*\.xm[lid]$
+  - org\.eclipse\.wst\.common\.component
+  - org\.eclipse\.jdt\.core\.prefs
+  - org\.eclipse\.core\.resources\.prefs
+  - ^.*\.sql$
+  - ^.*\.springBeans$
+  - ^.*\.tld$
+  - ^.*\.html?$
+  - ^.*\.compatibility$
+  - ^.*\.xsl$
+  - ^.*\.ya?ml$
+  - ^.*\.dtd$
+  - ^.*\.sh$
+  - ^.*\.htm$
+  - ^.*\.README$
+  - ^.*\.csv$
+  - ^.*\.xsd$
+  - ^.*\.wsld$
+  - ^.*\.xslfo$
+  
+extensionsBinary:
+  - ^.*\.docx?$ 
+  - ^.*\.xlsx?$ 
+  - ^.*\.pptx?$ 
+  - ^.*\.pdf$ 

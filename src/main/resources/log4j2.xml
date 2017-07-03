@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Appenders>
+		<Console name="console" target="SYSTEM_OUT">
+			<!--  https://logging.apache.org/log4j/2.x/manual/layouts.html#Patterns -->
+			<PatternLayout pattern="%d{ISO8601}\t[%t]\t%-5level\t%logger\t%msg%n" />
+		</Console>
+	</Appenders>
+	<Loggers>
+		<AsyncLogger name="cc" level="trace" additivity="false">
+			<AppenderRef ref="console" />
+		</AsyncLogger>
+		<asyncRoot level="INFO">
+			<AppenderRef ref="console" />
+		</asyncRoot>
+	</Loggers>
+</Configuration>
